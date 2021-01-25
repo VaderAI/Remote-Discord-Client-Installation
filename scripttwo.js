@@ -1,8 +1,6 @@
 /* this is the bot that will help you send messages through REPL.IT ISNT THAT NICE !!!!! */
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Database = require("@replit/database"); 
-const db = new Database(); 
 let channelid;  
 
 client.on('ready', () => {
