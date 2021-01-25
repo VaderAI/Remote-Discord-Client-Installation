@@ -7,12 +7,7 @@ const client = new Discord.Client();
 client.on('ready' ,() => { 
 client.user.setStatus('Listening for Messages...')
 console.warn(`Now listening for conversation as ${client.user.tag}`); 
-
- 
 })
-
-let channelid = prompt('Type the channel ID');
-let channel = client.channels.cache.get(channelid);
 client.on('message', (message) => { 
  
 console.log(`${message.author.username}@${message.guild.name}:${message.content}`);
